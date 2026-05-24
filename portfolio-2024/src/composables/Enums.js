@@ -3,6 +3,7 @@ export const allProjectsTags = {
   unreal: 'Made with Unreal engine',
   studentProject: 'Student Project',
   internship: 'Internship',
+  juniorFTC : 'Junior FTC',
   steam: 'Released in Steam',
   mobile:"Mobile Game",
   masterProject: 'Master Project',
@@ -17,6 +18,8 @@ export const allProjectsTags = {
   boby:"Boby, a Cegid Compagny",
   wip:"WIP",
   patchs: 'Regular patches',
+  osome: 'Osome Studio' ,
+  currentProject : 'Current project'
 }
 export const allKeypointsTags ={
   research:'R&D',

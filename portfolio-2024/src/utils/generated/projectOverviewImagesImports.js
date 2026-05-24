@@ -9,6 +9,8 @@ import iNRSOverviewPictureJpgImported from "@/assets/generated/projectsOverview/
 import iNRSOverviewPictureWebpImported from "@/assets/generated/projectsOverview/INRSOverviewPicture.webp";
 import jabOverviewPictureJpgImported from "@/assets/generated/projectsOverview/JabOverviewPicture.jpg";
 import jabOverviewPictureWebpImported from "@/assets/generated/projectsOverview/JabOverviewPicture.webp";
+import osomePictureOverviewJpgImported from "@/assets/generated/projectsOverview/OsomePictureOverview.jpg";
+import osomePictureOverviewWebpImported from "@/assets/generated/projectsOverview/OsomePictureOverview.webp";
 import rSMOverviewPictureJpgImported from "@/assets/generated/projectsOverview/RSMOverviewPicture.jpg";
 import rSMOverviewPictureWebpImported from "@/assets/generated/projectsOverview/RSMOverviewPicture.webp";
 export const  bobyOverviewPicture= {
@@ -30,6 +32,10 @@ export const  iNRSOverviewPicture= {
 export const  jabOverviewPicture= {
     jpg: jabOverviewPictureJpgImported,
     webp: jabOverviewPictureWebpImported,
+  };
+export const  osomePictureOverview= {
+    jpg: osomePictureOverviewJpgImported,
+    webp: osomePictureOverviewWebpImported,
   };
 export const  rSMOverviewPicture= {
     jpg: rSMOverviewPictureJpgImported,

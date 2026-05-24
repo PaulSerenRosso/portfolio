@@ -39,19 +39,22 @@ export default {
 
 <template>
   <popup-container class="project-overview-root"
-    class-container-name="project-overview-container"
+    class-container-name="project-overview-container "
     :gradient-color="this.gradientColor" :is-lazy="false">
 
+
     <router-link class="project-overview-image-container" :to="this.link">
+
       <main-image image-class="project-overview-image" class="overview-picture" :is-lazy="false" :src="this.PictureOverviewSrc"></main-image>
     </router-link>
+
 
     <tags-container class="project-overview-tag-container" :tags="this.tags"></tags-container>
 
     <subtitle>{{ this.subtitle }}</subtitle>
     <main-paragraph>{{ this.oneLine }}</main-paragraph>
 
-    <div class="project-overview-footer">
+    <div class="project-overview-footer" v-show="link !== ''">
       <router-link class="link" :to="this.link">
         <main-button :has-animation="false">Explore the Project!</main-button>
 
@@ -136,11 +139,14 @@ position: relative;
 
 }
 
-.overview-picture:hover {
-  cursor: pointer;
 
+
+.overview-picture:hover {
+
+cursor: pointer;
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
 }
+
 </style>

@@ -22,7 +22,7 @@ export default defineComponent({
   },
   methods: {
     copyPasteMail() {
-      const content = 'serenrossopaul' + '@' + 'gmail' + '.com';
+      const content = 'serenrossopaul' + '@' + 'protonmail' + '.com';
       navigator.clipboard.writeText(content);
       if (this.clipBoardAnimationTimer === undefined) {
         this.launchClipBoardAnimationPopup()
@@ -52,8 +52,8 @@ export default defineComponent({
     <prop-popup :is-lazy="false" :src="gmailProp" gradient-color="red">
       <template v-slot:title> My Email</template>
       <template v-slot:paragraph>
-        <div>
-          <main-button class="mail-button" @click="this.copyPasteMail">
+        <div style="position: relative">
+          <main-button   class="mail-button" @click="this.copyPasteMail">
             Get it!
 
           </main-button>
@@ -77,12 +77,14 @@ export default defineComponent({
         <link-button link="https://www.linkedin.com/in/paul-seren-rosso/">Get it!</link-button>
       </template>
     </prop-popup>
+    <!--
     <prop-popup :is-lazy="false" :src="twitterProp" gradient-color="green">
       <template v-slot:title> My Twitter</template>
       <template v-slot:paragraph>
         <link-button link="https://twitter.com/tiondel_">Get it!</link-button>
       </template>
     </prop-popup>
+    -->
   </div>
   <resume-container></resume-container>
   <scroll-reset />
@@ -108,36 +110,45 @@ export default defineComponent({
 
 .mail-button{
   width: min-content;
+  cursor: pointer;
+  user-select: none
 }
 
 .mail-copy-pop-up{
+  margin-top: 2rem;
+  top: -40%;
+  left:40%;
   background-color : $main-darken-highlight-color;
   border-radius: 50px;
-  padding: 1rem;
+  padding: 0.5rem;
   color: white;
   font-family: MyLight;
   opacity: 0;
   position: absolute;
-  transform:  scale(0.7);
+  width: max-content;
+
+
+
 }
 
 @keyframes reveal-animation {
   0%{
     opacity: 0;
-    transform:  translateX(-50%) scale(0.7);
+    transform: translate(-50%, -50%)  scale(0.7) ;
   }
   10%{
-    transform: translateX(-50%) scale(1.1);
+    transform: translate(-50%, -50%)  scale(1.1) ;
   }
   20%{
     opacity: 1;
-    transform: translateX(-50%) scale(1);
+    transform:translate(-50%, -50%)  scale(1) ;
   }
   80%{
     opacity: 1;
+    transform:translate(-50%, -50%) scale(1) ;
   }
   100%{
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%)  scale(1) ;
     opacity: 0;
   }
 }
@@ -177,7 +188,7 @@ export default defineComponent({
 @include largeDesktop-md() {
   .contacts-grid {
     grid-auto-rows: auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-template-rows: auto;
   }

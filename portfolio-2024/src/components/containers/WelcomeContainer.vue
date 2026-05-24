@@ -6,10 +6,11 @@ import RadialGradient from '@/components/RadialGradient.vue'
 import MainParagraph from '@/components/MainParagraph.vue'
 import MainQuote from '@/components/MainQuote.vue'
 import LinkElement from "@/components/LinkElement.vue";
+import BoldElement from "@/components/BoldElement.vue";
 
 export default defineComponent({
   name: 'WelcomeContainer',
-  components: {LinkElement, MainQuote, MainParagraph, RadialGradient, PageTitle, MainVideo },
+  components: {BoldElement, LinkElement, MainQuote, MainParagraph, RadialGradient, PageTitle, MainVideo },
 })
 </script>
 
@@ -22,10 +23,12 @@ export default defineComponent({
     <radial-gradient :is-lazy="false" :top="100" :left="-5" :radius-x="30" :radius-y="20" color="red"></radial-gradient>
     <radial-gradient :is-lazy="false" :top="0" :left="100" :radius-x="40" :radius-y="20" color="lightGreen"></radial-gradient>
     <page-title
-      text-content="Welcome! I am Paul, a Gameplay Programmer."
+      text-content="Welcome! I am Paul, a Gameplay/UI Programmer."
       class="welcome-title"
     ></page-title>
-
+    <main-quote class="welcome-quote" :delay="1000">
+      Graduated at <link-element link="https://rubika-edu.com/">Rubika</link-element> / Working at <link-element link="https://www.osome-studio.com/">Osome Studio</link-element> / Looking for opportunities from <bold-element>August 2026</bold-element>
+    </main-quote>
     <div class="welcome-video">
       <main-video  :delay="2000" src="vik-G4pqntk"></main-video>
     </div>
@@ -80,5 +83,8 @@ export default defineComponent({
   padding-bottom: 1rem;
 }
 
-
+.welcome-quote {
+  padding-bottom: 1rem;
+  text-align: Center;
+}
 </style>

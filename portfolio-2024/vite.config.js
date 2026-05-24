@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: 'portfolio',
   build: {
     rollupOptions: {
       external: ['@/toGenerated'], // Exclude specific folder from the build
