@@ -9,7 +9,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <project-page project-key="jabProject" next-project-key="dofusBetaProject" />
+  <project-page project-key="jabProject" next-project-key="garfieldProject" />
 </template>
 
 <style scoped lang="scss"></style>

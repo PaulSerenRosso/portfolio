@@ -43,7 +43,12 @@ import {
 } from "@/utils/generated/projectKeypointImagesImports.js"
 import {
   bobyOverviewPicture,
-  dofusOverviewPicture, esquirelOverviewPicture, iNRSOverviewPicture, jabOverviewPicture, osomePictureOverview,
+  dofusOverviewPicture,
+  esquirelOverviewPicture,
+  garfieldPictureOverview,
+  iNRSOverviewPicture,
+  jabOverviewPicture,
+
   rSMOverviewPicture,
 } from "@/utils/generated/projectOverviewImagesImports.js"
 
@@ -65,64 +70,22 @@ import rsmKeypointDescriptionConcept from "@/components/projects/rsm/RsmKeypoint
 import rsmKeypointDescriptionProducing from "@/components/projects/rsm/RsmKeypointDescriptionProducing.vue";
 import rsmKeypointDescriptionResearch from "@/components/projects/rsm/RsmKeypointDescriptionResearch.vue";
 import rsmKeypointDescriptionPrototype from "@/components/projects/rsm/RsmKeypointDescriptionPrototype.vue";
+import garfieldPitch from "@/components/projects/garfield/GarfieldPitch.vue";
 
 
 export const useProjectInfoStore = defineStore('projectsInfoStore', {
   state: () => ({
     allProjectsInfo: {
-      osomeProject: new ProjectInfo('Unannounced Project', 'Working as UI and Gameplay Programmer', [allProjectsTags.osome, allProjectsTags.internship, allProjectsTags.juniorFTC,allProjectsTags.unreal, allProjectsTags.currentProject]
-        , osomePictureOverview  , 'July 2024 to October 2024 (3 months)','Team ≈70 members, including ≈20 of Game Programmers spread across Client and Server departments, as well as Game Designers, Level Designers, UX/UI Designers, QA specialists, Project Managers, and Game Artists.',
-      'Client Game Programmer',
-      dofusPitch,
-      'dIsIL1yv6iA',
+      garfieldProject: new ProjectInfo('Garfield Escape from Monday', 'A 3D platformer set in Garfield’s worst nightmare.', [allProjectsTags.osome, allProjectsTags.internship, allProjectsTags.juniorFTC,allProjectsTags.unreal, allProjectsTags.currentProject]
+        , garfieldPictureOverview  , 'August 2025 to Present','A team of ≈20 members including Game Programmers, Game Designers, Level Designers, Game Artists, Producers, Narrative Designers and QA Specialists',
+      'Gameplay/UI Programmer',
+      garfieldPitch,
+      '',
       [
-        new ProjectKeypointInfo(
-          'Follow the Dofus Workflow',
-          dofusKeypointDescriptionWorkflow,
-          [
-            allKeypointsTags.architecture,
-            allKeypointsTags.versionControl,
-            allKeypointsTags.pipeline,
-            allKeypointsTags.patches,
-          ],
-          dofusKeypointWorkflow,
-          keypointContentType.image,),
-      new ProjectKeypointInfo(
-        'Improve User Interfaces',
-        dofusKeypointDescriptionImproveUI,
-        [
-          allKeypointsTags.ui,
-          allKeypointsTags.optimization,
-        ],
-        [dofusKeypointUI1,dofusKeypointUI2,dofusKeypointUI4,dofusKeypointUI3,dofusKeypointUI5],
-        keypointContentType.swiper,
-      ),
-      new ProjectKeypointInfo(
-        'Work on tactical combat system',
-        dofusKeypointDescriptionTacticalCombat,
-        [
-          allKeypointsTags.combat,
-          allKeypointsTags.network,
-          allKeypointsTags.ui,
-        ],
-        'KVFckpvYTFg',
-        keypointContentType.video,
-      ),
-      new ProjectKeypointInfo(
-        'Program on other systems',
-        dofusKeypointDescriptionOthersTasks,
-        [
-          allKeypointsTags.controller,
-          allKeypointsTags.ui,
-          allKeypointsTags.sound,
-        ],
-        'V03zxB9SWrw',
-        keypointContentType.video,
-      ),
 ],
 'orange',
-  'yellow',
-  '',
+  'green',
+  '/garfield',
 ),
       dofusBetaProject: new ProjectInfo(
         'Dofus 3.0 Open Beta',

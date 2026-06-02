@@ -8,6 +8,7 @@ import JabView from "@/views/Projects/JabView.vue";
 import DofusBetaView from "@/views/Projects/DofusBetaView.vue";
 import BobyView from "@/views/Projects/BobyView.vue";
 import RSMView from "@/views/Projects/RSMView.vue";
+import GarfieldView from "@/views/Projects/GarfieldView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,6 +43,7 @@ const router = createRouter({
       name: 'jab',
       component: JabView,
     },
+
     {
       path: '/dofusBeta',
       name: 'dofusBeta',
@@ -56,6 +58,11 @@ const router = createRouter({
       path: '/rsm',
       name: 'rsm',
       component: RSMView,
+    },
+    {
+      path: '/garfield',
+      name: 'garfield',
+      component: GarfieldView,
     },
   ],
 })

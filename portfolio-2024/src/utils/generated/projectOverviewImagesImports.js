@@ -5,12 +5,12 @@ import dofusOverviewPictureJpgImported from "@/assets/generated/projectsOverview
 import dofusOverviewPictureWebpImported from "@/assets/generated/projectsOverview/DofusOverviewPicture.webp";
 import esquirelOverviewPictureJpgImported from "@/assets/generated/projectsOverview/EsquirelOverviewPicture.jpg";
 import esquirelOverviewPictureWebpImported from "@/assets/generated/projectsOverview/EsquirelOverviewPicture.webp";
+import garfieldPictureOverviewJpgImported from "@/assets/generated/projectsOverview/GarfieldPictureOverview.jpg";
+import garfieldPictureOverviewWebpImported from "@/assets/generated/projectsOverview/GarfieldPictureOverview.webp";
 import iNRSOverviewPictureJpgImported from "@/assets/generated/projectsOverview/INRSOverviewPicture.jpg";
 import iNRSOverviewPictureWebpImported from "@/assets/generated/projectsOverview/INRSOverviewPicture.webp";
 import jabOverviewPictureJpgImported from "@/assets/generated/projectsOverview/JabOverviewPicture.jpg";
 import jabOverviewPictureWebpImported from "@/assets/generated/projectsOverview/JabOverviewPicture.webp";
-import osomePictureOverviewJpgImported from "@/assets/generated/projectsOverview/OsomePictureOverview.jpg";
-import osomePictureOverviewWebpImported from "@/assets/generated/projectsOverview/OsomePictureOverview.webp";
 import rSMOverviewPictureJpgImported from "@/assets/generated/projectsOverview/RSMOverviewPicture.jpg";
 import rSMOverviewPictureWebpImported from "@/assets/generated/projectsOverview/RSMOverviewPicture.webp";
 export const  bobyOverviewPicture= {
@@ -25,6 +25,10 @@ export const  esquirelOverviewPicture= {
     jpg: esquirelOverviewPictureJpgImported,
     webp: esquirelOverviewPictureWebpImported,
   };
+export const  garfieldPictureOverview= {
+    jpg: garfieldPictureOverviewJpgImported,
+    webp: garfieldPictureOverviewWebpImported,
+  };
 export const  iNRSOverviewPicture= {
     jpg: iNRSOverviewPictureJpgImported,
     webp: iNRSOverviewPictureWebpImported,
@@ -32,10 +36,6 @@ export const  iNRSOverviewPicture= {
 export const  jabOverviewPicture= {
     jpg: jabOverviewPictureJpgImported,
     webp: jabOverviewPictureWebpImported,
-  };
-export const  osomePictureOverview= {
-    jpg: osomePictureOverviewJpgImported,
-    webp: osomePictureOverviewWebpImported,
   };
 export const  rSMOverviewPicture= {
     jpg: rSMOverviewPictureJpgImported,

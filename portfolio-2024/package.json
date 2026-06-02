@@ -11,7 +11,9 @@
     "format": "prettier --write src/",
     "generate-images": "node scripts/generate-images.js",
     "write-import-images": "node scripts/write-import-images.js",
-    "clear-generated-folder": "node scripts/clear-generated-folder.js"
+    "clear-generated-folder": "node scripts/clear-generated-folder.js",
+      "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "pinia": "^2.2.8",

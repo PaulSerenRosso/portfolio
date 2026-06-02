@@ -18,7 +18,7 @@ export const allProjectsTags = {
   boby:"Boby, a Cegid Compagny",
   wip:"WIP",
   patchs: 'Regular patches',
-  osome: 'Osome Studio' ,
+  osome: 'OSome Studio' ,
   currentProject : 'Current project'
 }
 export const allKeypointsTags ={

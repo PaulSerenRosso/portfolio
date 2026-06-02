@@ -84,8 +84,8 @@ export default {
       </div>
       <component class="pitch" :is="this.pitchText"></component>
 
-      <div class="trailer">
-      <main-video class="trailer-video" :src="this.trailerSrc" :delay="500"></main-video>
+      <div class="trailer" >
+      <main-video v-if="this.trailerSrc !== ''" class="trailer-video" :src="this.trailerSrc" :delay="500"></main-video>
         </div>
     </div>
   </div>
