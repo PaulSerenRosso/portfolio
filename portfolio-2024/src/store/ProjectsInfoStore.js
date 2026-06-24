@@ -80,7 +80,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
         , garfieldPictureOverview  , 'August 2025 to Present','A team of ≈20 members including Game Programmers, Game Designers, Level Designers, Game Artists, Producers, Narrative Designers and QA Specialists',
       'Gameplay/UI Programmer',
       garfieldPitch,
-      '',
+      'bNChHN4uDKU',
       [
 ],
 'orange',
