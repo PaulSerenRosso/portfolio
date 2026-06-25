@@ -30,7 +30,7 @@ export default defineComponent({
       Graduated at <link-element link="https://rubika-edu.com/">Rubika</link-element> / Working at <link-element link="https://www.osome-studio.com/">OSome Studio</link-element> on  <link-element link="https://store.steampowered.com/app/3932790/Garfield__Escape_from_Monday/">Garfield</link-element> / Looking for opportunities from <bold-element>August 2026</bold-element>
     </main-quote>
     <div class="welcome-video">
-      <main-video  :delay="2000" src="vik-G4pqntk"></main-video>
+      <main-video  :delay="2000" src="ZjTYmP1Dni8"></main-video>
     </div>
 
   </div>
