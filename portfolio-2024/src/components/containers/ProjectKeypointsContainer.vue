@@ -8,13 +8,15 @@ export default {
     keypoints:null,
     firstGradientColor:String,
     secondGradientColor:String,
+    keypointPrefix:String,
+    areKeypointsInvert: Boolean
   }
 }
 </script>
 
 <template>
 <div class="keypoints-container">
-<keypoint-details :index="index+1" :style="{flexDirection:index%2 ===0? 'row': 'row-reverse'}" class="keypoints-item" v-for="(keypoint,index) in this.keypoints" :keypoint="keypoint" :color-gradient="index%2 ===0? this.firstGradientColor: this.secondGradientColor" :key="index">
+<keypoint-details :index="areKeypointsInvert ? keypoints.length-index : index+1" :keypoint-prefix="keypointPrefix" :style="{flexDirection:index%2 ===0? 'row': 'row-reverse'}" class="keypoints-item" v-for="(keypoint,index) in this.keypoints" :keypoint="keypoint" :color-gradient="index%2 ===0? this.firstGradientColor: this.secondGradientColor" :key="index">
 
 </keypoint-details>
 </div>

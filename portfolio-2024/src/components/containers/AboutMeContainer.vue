@@ -44,10 +44,12 @@ export default defineComponent({
     <page-title class="about-me-title" text-content="What about me?"></page-title>
     <div class="about-me-grid">
       <prop-popup :is-lazy="true" :src="targetProp" gradient-color="red">
-        <template v-slot:title>Go forward and always keep learning</template>
+        <template v-slot:title>Create fun, make an impact</template>
         <template v-slot:paragraph>
-          I strive to see failure as an opportunity to grow, not as a roadblock. I take the time to
-          reflect, understand what caused it, learn from it, and continue on my path.
+          I believe video games need to be fun to create memorable experiences, but I also see them as a powerful medium
+          capable of inspiring growth, raising awareness, and helping players engage with meaningful subjects and
+          real-life challenges. I wish to create experiences that not only entertain but also encourage reflection,
+          empathy, and positive change for players and society.
         </template>
       </prop-popup>
       <prop-popup :is-lazy="true" :src="curiosityProp" gradient-color="yellow">
@@ -67,9 +69,8 @@ export default defineComponent({
       <prop-popup :is-lazy="true" :src="sportProp" gradient-color="blue">
         <template v-slot:title> Improve myself through sport </template>
         <template v-slot:paragraph>
-          After 10 years of competitive handball, I now thrive on sports like badminton, swimming,
-          and tennis. I love how they build focus, values, and determination. Currently, I'm
-          training for a half marathon!
+          After 10 years of competitive handball, I now thrive on sports like cycling, running and roller.
+          I love how they build focus, values, and determination.
         </template>
       </prop-popup>
       <prop-popup :is-lazy="true" :src="cookProp" gradient-color="green">
@@ -88,9 +89,6 @@ export default defineComponent({
         </template>
       </prop-popup>
     </div>
-    <main-quote :is-right-direction="false" class="socket-quote"
-      >Finally, I have a collection of more than 50 pairs of socks!
-    </main-quote>
   </div>
 </template>
 
@@ -104,14 +102,7 @@ export default defineComponent({
   position: relative;
 }
 
-.socket-quote {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: MySemiBold;
-}
+
 
 .about-me-container {
   position: relative;

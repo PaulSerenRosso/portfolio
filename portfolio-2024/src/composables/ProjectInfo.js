@@ -15,6 +15,8 @@ export class ProjectInfo {
     firstGradientColor,
     secondGradientColor,
     link,
+    keypointPrefix,
+    areKeypointsNumberInvert,
 
   ) {
     this.projectName = projectName
@@ -30,5 +32,7 @@ export class ProjectInfo {
     this.secondGradientColor = secondGradientColor
     this.link = link;
     this.roleText= roleText;
+    this.keypointPrefix = keypointPrefix;
+    this.areKeypointsNumberInvert = areKeypointsNumberInvert;
   }
 }

@@ -27,7 +27,7 @@ export default defineComponent({
       class="welcome-title"
     ></page-title>
     <main-quote class="welcome-quote" :delay="1000">
-      Graduated at <link-element link="https://rubika-edu.com/">Rubika</link-element> / Working at <link-element link="https://www.osome-studio.com/">OSome Studio</link-element> on  <link-element link="https://store.steampowered.com/app/3932790/Garfield__Escape_from_Monday/">Garfield</link-element> / Looking for opportunities from <bold-element>August 2026</bold-element>
+      Graduated at <link-element link="https://rubika-edu.com/">Rubika</link-element> / Looking for <bold-element>FTC</bold-element>, <bold-element>Permanent</bold-element> and <bold-element>Freelance</bold-element> Opportunities
     </main-quote>
     <div class="welcome-video">
       <main-video  :delay="2000" src="ZjTYmP1Dni8"></main-video>

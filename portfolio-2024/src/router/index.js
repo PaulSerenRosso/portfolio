@@ -9,6 +9,7 @@ import DofusBetaView from "@/views/Projects/DofusBetaView.vue";
 import BobyView from "@/views/Projects/BobyView.vue";
 import RSMView from "@/views/Projects/RSMView.vue";
 import GarfieldView from "@/views/Projects/GarfieldView.vue";
+import IGSView from "@/views/Projects/IGSView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -63,6 +64,11 @@ const router = createRouter({
       path: '/garfield',
       name: 'garfield',
       component: GarfieldView,
+    },
+    {
+      path: '/impactGameSeries',
+      name: 'impactGameSeries',
+      component: IGSView,
     },
   ],
 })

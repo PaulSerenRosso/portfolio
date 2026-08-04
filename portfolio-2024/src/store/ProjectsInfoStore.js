@@ -71,12 +71,16 @@ import rsmKeypointDescriptionProducing from "@/components/projects/rsm/RsmKeypoi
 import rsmKeypointDescriptionResearch from "@/components/projects/rsm/RsmKeypointDescriptionResearch.vue";
 import rsmKeypointDescriptionPrototype from "@/components/projects/rsm/RsmKeypointDescriptionPrototype.vue";
 import garfieldPitch from "@/components/projects/garfield/GarfieldPitch.vue";
+import IGSKeypointDescriptionTest from "@/components/projects/igs/IGSKeypointDescriptionTest.vue";
 
 
 export const useProjectInfoStore = defineStore('projectsInfoStore', {
   state: () => ({
     allProjectsInfo: {
-      garfieldProject: new ProjectInfo('Garfield Escape from Monday', 'A 3D platformer set in Garfield’s worst nightmare.', [allProjectsTags.osome, allProjectsTags.internship, allProjectsTags.juniorFTC,allProjectsTags.unreal, allProjectsTags.currentProject]
+
+
+      garfieldProject: new ProjectInfo('\n' +
+        'Garfield Escape from Monday', 'A 3D platformer set in Garfield’s worst nightmare.', [allProjectsTags.osome, allProjectsTags.internship, allProjectsTags.juniorFTC,allProjectsTags.unreal]
         , garfieldPictureOverview  , 'August 2025 to Present','A team of ≈20 members including Game Programmers, Game Designers, Level Designers, Game Artists, Producers, Narrative Designers and QA Specialists',
       'Gameplay/UI Programmer',
       garfieldPitch,
@@ -87,6 +91,29 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
   'green',
   '/garfield',
 ),
+      /*
+      igsProject: new ProjectInfo('20h Impact Game Series', 'Solo-developed games created in just 20 hours, inspired by real-world issues.', [allProjectsTags.unity, allProjectsTags.personalProject,  allProjectsTags.currentProject, allProjectsTags.prototypes]
+        , garfieldPictureOverview  , 'August 2026 to Present','Only me!',
+        'Solo Game Developer',
+        garfieldPitch,
+        '',
+        [new ProjectKeypointInfo("Super Cool Game Name!",
+          IGSKeypointDescriptionTest,
+          [allKeypointsTags.elderlySocialIsolation,
+            allKeypointsTags.pointAndClick, allKeypointsTags.unity],
+          'fZ6ramtZYAE', keypointContentType.video),
+
+          new ProjectKeypointInfo("Super Cool Game Name!",
+            IGSKeypointDescriptionTest,
+            [allKeypointsTags.elderlySocialIsolation,
+              allKeypointsTags.pointAndClick, allKeypointsTags.unity],
+            'fZ6ramtZYAE', keypointContentType.video)
+        ],
+        'pink',
+        'cyan',
+        '/impactGameSeries', "Game ", true),
+        */
+
       dofusBetaProject: new ProjectInfo(
         'Dofus 3.0 Open Beta',
         '20-year-old fantasy MMORPG with turn-based combat',

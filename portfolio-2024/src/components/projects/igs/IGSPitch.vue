@@ -6,7 +6,7 @@ import LinkElement from "@/components/LinkElement.vue";
 import BoldElement from "@/components/BoldElement.vue";
 
 export default defineComponent({
-  name: 'GarfieldPitch',
+  name: 'IGSPitch',
   components: {BoldElement, LinkElement, MainParagraph, SpaceParagraph},
 })
 </script>

@@ -19,7 +19,11 @@ export const allProjectsTags = {
   wip:"WIP",
   patchs: 'Regular patches',
   osome: 'OSome Studio' ,
-  currentProject : 'Current project'
+  currentProject : 'Current project',
+  personalProject : 'Personal Project',
+  prototypes : 'Prototypes',
+
+
 }
 export const allKeypointsTags ={
   research:'R&D',
@@ -49,7 +53,12 @@ export const allKeypointsTags ={
   techArt:"Tech-Art",
   procedural:"Procedural Content",
   api:"API",
-  gameDesign:"Game Design"
+  gameDesign:"Game Design",
+
+  // for games prototypes of IGS
+  elderlySocialIsolation:"Elderly Social Isolation",
+  pointAndClick:"Point & Click",
+  unity:"Unity",
 
 
 
