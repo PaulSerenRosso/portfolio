@@ -7,33 +7,35 @@ import BoldElement from "@/components/BoldElement.vue";
 
 export default defineComponent({
   name: 'IGSPitch',
-  components: {BoldElement, LinkElement, MainParagraph, SpaceParagraph},
+  components: {BoldElement, MainParagraph, SpaceParagraph},
 })
 </script>
 
 <template>
   <div>
     <space-paragraph>
-      <link-element link="https://www.osome-studio.com/">OSome Studio</link-element>
-      develops games for PC and consoles, including licensed franchises. The company has released
-      <bold-element>family-oriented</bold-element> games based on popular European IPs like <bold-element>Asterix and Obelix</bold-element> or <bold-element>The Smurfs</bold-element>.
+      The idea behind this personal project is simple: each prototype
+      is like a <bold-element>solo game jam</bold-element>, except the theme is inspired by a <bold-element>real-world issue</bold-element>.
     </space-paragraph>
     <space-paragraph>
-      <link-element link="https://store.steampowered.com/app/3932790/Garfield__Escape_from_Monday/"> Garfield Escape
-        From Monday</link-element>
-      is an upcoming <bold-element>3D platformer</bold-element> published by
-      <link-element link="https://www.microids.com/">Microids</link-element>.
-     Here's a small pitch:
+      The time limit challenges me to <bold-element>quickly design</bold-element> a playable prototype that tests whether a
+      gameplay concept is <bold-element>fun</bold-element>. Each project is also an opportunity to <bold-element>experiment</bold-element>
+      with <bold-element>new technologies</bold-element>, game engines, genres, and mechanics that I haven't worked with before.
     </space-paragraph>
-      <main-paragraph>"After Jon makes Garfield eat spinach lasagna recommended by Chef Monday, he falls into a deep sleep and becomes
-        <bold-element>trapped</bold-element> in a <bold-element>bizarre dream</bold-element> world ruled by Monday itself. The world’s laziest cat must navigate through
-        <bold-element>enemy-filled</bold-element> levels, collect as many lasagnas as possible, and fight his way toward <bold-element>waking up</bold-element> and <bold-element>regaining his
-          sense of taste</bold-element>. Gameplay focuses on <bold-element>fluid feline movement</bold-element> such as jumping, rolling into a ball, and climbing
-        walls, always landing on his feet. Along the way, Garfield can rely on Jon and his friends Odie, Arlene, and
-        Pookie, while enemies like Nermal and Squeak try to stop him. He can also unlock <bold-element>hilarious costumes</bold-element> like a turkey,
-        surfer, or cowboy, each <bold-element>granting unique abilities</bold-element>. Across <bold-element>three vibrant worlds</bold-element> and dozens of levels, players
-        <bold-element>collect lasagna</bold-element> and other items that not only help progression but also allow them to <bold-element>decorate Jon’s house</bold-element>."
+      <space-paragraph>
+        I chose to develop these prototypes entirely on my own so I could <bold-element>learn skills beyond programming</bold-element>, including game
+      design, art, audio, and other disciplines involved in game development.
+      </space-paragraph>
+    <space-paragraph>
+      My goal is not only to create enjoyable prototypes but also to <bold-element>learn how to raise awareness</bold-element> through video games about important real-world issues.
+      That's why each prototype explores a <bold-element>different theme</bold-element>, allowing me to experiment with new subjects!
+      </space-paragraph>
+    <main-paragraph>
+      Below, you'll find a summary of each prototype.
     </main-paragraph>
+
+
+
   </div>
 </template>
 

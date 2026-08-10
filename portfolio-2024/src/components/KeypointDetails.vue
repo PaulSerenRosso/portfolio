@@ -35,7 +35,7 @@ export default {
   <div class="keypoint-details-container">
     <popup-container :is-lazy="true" class="pop-up-root" class-container-name="keypoint-popup-container" :gradient-color="this.colorGradient">
       <tags-container class="tags" :tags="this.keypoint.keypointTags"></tags-container>
-      <subtitle>  <span class="number">{{keypointPrefix+index}}.</span> {{this.keypoint.keypointName}}</subtitle>
+      <subtitle>  <span class="number">{{keypointPrefix === undefined ? index : keypointPrefix+index}}.</span> {{this.keypoint.keypointName}}</subtitle>
 
       <component class="paragraph" :is=this.keypoint.keypointDescriptionComponent >
       </component>

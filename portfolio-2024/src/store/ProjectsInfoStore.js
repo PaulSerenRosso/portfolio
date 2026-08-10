@@ -72,6 +72,7 @@ import rsmKeypointDescriptionResearch from "@/components/projects/rsm/RsmKeypoin
 import rsmKeypointDescriptionPrototype from "@/components/projects/rsm/RsmKeypointDescriptionPrototype.vue";
 import garfieldPitch from "@/components/projects/garfield/GarfieldPitch.vue";
 import IGSKeypointDescriptionTest from "@/components/projects/igs/IGSKeypointDescriptionTest.vue";
+import IGSPitch from "@/components/projects/igs/IGSPitch.vue";
 
 
 export const useProjectInfoStore = defineStore('projectsInfoStore', {
@@ -91,11 +92,11 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
   'green',
   '/garfield',
 ),
-      /*
-      igsProject: new ProjectInfo('20h Impact Game Series', 'Solo-developed games created in just 20 hours, inspired by real-world issues.', [allProjectsTags.unity, allProjectsTags.personalProject,  allProjectsTags.currentProject, allProjectsTags.prototypes]
+/*
+      igsProject: new ProjectInfo('20h Impact Game Series', 'Solo-developed games created in just 40 hours, inspired by real-world issues.', [allProjectsTags.unity, allProjectsTags.personalProject,  allProjectsTags.currentProject, allProjectsTags.prototypes]
         , garfieldPictureOverview  , 'August 2026 to Present','Only me!',
         'Solo Game Developer',
-        garfieldPitch,
+        IGSPitch,
         '',
         [new ProjectKeypointInfo("Super Cool Game Name!",
           IGSKeypointDescriptionTest,
@@ -112,7 +113,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
         'pink',
         'cyan',
         '/impactGameSeries', "Game ", true),
-        */
+*/
 
       dofusBetaProject: new ProjectInfo(
         'Dofus 3.0 Open Beta',

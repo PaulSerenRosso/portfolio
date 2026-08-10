@@ -46,7 +46,7 @@ export default {
       this.projectsInfoStore.allProjectsInfo[this.projectKey].secondGradientColor
     "
     :keypoint-prefix="this.projectsInfoStore.allProjectsInfo[this.projectKey].keypointPrefix"
-    :are-keypoints-invert="this.projectsInfoStore.allProjectsInfo[this.projectKey].areKeypointsInvert"
+    :are-keypoints-invert="this.projectsInfoStore.allProjectsInfo[this.projectKey].areKeypointsNumberInvert"
     :keypoints="this.projectsInfoStore.allProjectsInfo[this.projectKey].keypoints"
   >
 
