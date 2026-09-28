@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <project-page project-key="garfieldProject" next-project-key="igsProject"/>
+  <project-page project-key="garfieldProject" next-project-key="dofusBetaProject" />
 
 </template>
 

@@ -14,18 +14,17 @@ export default defineComponent({
 <template>
   <div>
     <space-paragraph>
-      <link-element link="https://www.osome-studio.com/">OSome Studio</link-element>
+      <link-element link="https://store.steampowered.com/app/3932790/Garfield__Escape_from_Monday/"> Garfield Escape
+        From Monday</link-element>
+      is an <bold-element>3D platformer</bold-element> developed by  <link-element link="https://www.osome-studio.com/">OSome Studio</link-element> with Unreal Engine, and released the 24 September 2026 by
+      <link-element link="https://www.microids.com/">Microids</link-element> on <bold-element>Nintendo Switch, PS5, PC, Xbox Series X</bold-element>.
+    </space-paragraph>
+    <space-paragraph>
+      OSome Studio
       develops games for PC and consoles, including licensed franchises. The company has released
       <bold-element>family-oriented</bold-element> games based on popular European IPs like <bold-element>Asterix and Obelix</bold-element> or <bold-element>The Smurfs</bold-element>.
     </space-paragraph>
-    <space-paragraph>
-      <link-element link="https://store.steampowered.com/app/3932790/Garfield__Escape_from_Monday/"> Garfield Escape
-        From Monday</link-element>
-      is an upcoming <bold-element>3D platformer</bold-element> published by
-      <link-element link="https://www.microids.com/">Microids</link-element>.
-     Here's a small pitch:
-    </space-paragraph>
-      <main-paragraph>"After Jon makes Garfield eat spinach lasagna recommended by Chef Monday, he falls into a deep sleep and becomes
+      <main-paragraph>Here's a small pitch: "After Jon makes Garfield eat spinach lasagna recommended by Chef Monday, he falls into a deep sleep and becomes
         <bold-element>trapped</bold-element> in a <bold-element>bizarre dream</bold-element> world ruled by Monday itself. The world’s laziest cat must navigate through
         <bold-element>enemy-filled</bold-element> levels, collect as many lasagnas as possible, and fight his way toward <bold-element>waking up</bold-element> and <bold-element>regaining his
           sense of taste</bold-element>. Gameplay focuses on <bold-element>fluid feline movement</bold-element> such as jumping, rolling into a ball, and climbing

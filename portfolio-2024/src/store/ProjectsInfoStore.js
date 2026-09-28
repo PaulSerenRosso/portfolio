@@ -1,8 +1,8 @@
-import { defineStore } from 'pinia'
-import { ProjectInfo } from '@/composables/ProjectInfo.js'
-import { ProjectKeypointInfo } from '@/composables/ProjectKeypointInfo.js'
+import {defineStore} from 'pinia'
+import {ProjectInfo} from '@/composables/ProjectInfo.js'
+import {ProjectKeypointInfo} from '@/composables/ProjectKeypointInfo.js'
 import {allProjectsTags, keypointContentType} from '@/composables/Enums.js'
-import { allKeypointsTags } from '@/composables/Enums.js'
+import {allKeypointsTags} from '@/composables/Enums.js'
 
 import inrsPitch from '@/components/projects/inrs/InrsPitch.vue'
 import dofusPitch from '@/components/projects/dofus/DofusPitch.vue'
@@ -73,6 +73,16 @@ import rsmKeypointDescriptionPrototype from "@/components/projects/rsm/RsmKeypoi
 import garfieldPitch from "@/components/projects/garfield/GarfieldPitch.vue";
 import IGSKeypointDescriptionTest from "@/components/projects/igs/IGSKeypointDescriptionTest.vue";
 import IGSPitch from "@/components/projects/igs/IGSPitch.vue";
+import GarfieldKeypointDescriptionReusableCode
+  from "@/components/projects/garfield/GarfieldKeypointDescriptionReusableCode.vue";
+import GarfieldKeypointDescriptionUiFramework
+  from "@/components/projects/garfield/GarfieldKeypointDescriptionUiFramework.vue";
+import GarfieldKeypointDescriptionLevelFlow
+  from "@/components/projects/garfield/GarfieldKeypointDescriptionLevelFlow.vue";
+import GarfieldKeypointDescriptionVariousFeatures
+  from "@/components/projects/garfield/GarfieldKeypointDescriptionVariousFeatures.vue";
+import GarfieldKeypointDescriptionPlatform
+  from "@/components/projects/garfield/GarfieldKeypointDescriptionPlatform.vue";
 
 
 export const useProjectInfoStore = defineStore('projectsInfoStore', {
@@ -81,39 +91,43 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
 
 
       garfieldProject: new ProjectInfo('\n' +
-        'Garfield Escape from Monday', 'A 3D platformer set in Garfield’s worst nightmare.', [allProjectsTags.osome, allProjectsTags.internship, allProjectsTags.juniorFTC,allProjectsTags.unreal]
-        , garfieldPictureOverview  , 'August 2025 to Present','A team of ≈20 members including Game Programmers, Game Designers, Level Designers, Game Artists, Producers, Narrative Designers and QA Specialists',
-      'Gameplay/UI Programmer',
-      garfieldPitch,
-      'bNChHN4uDKU',
-      [
-],
-'orange',
-  'green',
-  '/garfield',
-),
-/*
-      igsProject: new ProjectInfo('20h Impact Game Series', 'Solo-developed games created in just 40 hours, inspired by real-world issues.', [allProjectsTags.unity, allProjectsTags.personalProject,  allProjectsTags.currentProject, allProjectsTags.prototypes]
-        , garfieldPictureOverview  , 'August 2026 to Present','Only me!',
-        'Solo Game Developer',
-        IGSPitch,
-        '',
-        [new ProjectKeypointInfo("Super Cool Game Name!",
-          IGSKeypointDescriptionTest,
-          [allKeypointsTags.elderlySocialIsolation,
-            allKeypointsTags.pointAndClick, allKeypointsTags.unity],
-          'fZ6ramtZYAE', keypointContentType.video),
+        'Garfield Escape from Monday', 'A 3D platformer set in Garfield’s worst nightmare.', [allProjectsTags.osome, allProjectsTags.internship, allProjectsTags.juniorFTC, allProjectsTags.unreal]
+        , garfieldPictureOverview, 'August 2025 to July 2026', 'A team of ≈20 members including Game Programmers, Game Designers, Level Designers, Game Artists, Producers, Narrative Designers and QA Specialists',
+        'Gameplay/UI Programmer',
+        garfieldPitch,
+        'MdxfG-TXWGs',
+        [
+          new ProjectKeypointInfo("Develop a Reusable UI Framework/Shared Codebase", GarfieldKeypointDescriptionReusableCode, [allKeypointsTags.ui, allKeypointsTags.architecture, allKeypointsTags.communication]),
+        new ProjectKeypointInfo("Manage the UI Framework from Start to Finish", GarfieldKeypointDescriptionUiFramework, [allKeypointsTags.research, allKeypointsTags.ui, allKeypointsTags.architecture, allKeypointsTags.documentation]),
+        new ProjectKeypointInfo("Develop Level-Flow Systems", GarfieldKeypointDescriptionLevelFlow, [allKeypointsTags.systems, allKeypointsTags.ui]),
+        new ProjectKeypointInfo("Work on various gameplay features ", GarfieldKeypointDescriptionVariousFeatures, [allKeypointsTags.combat, allKeypointsTags.architecture, allKeypointsTags.ai, allKeypointsTags.controller, allKeypointsTags.gameFeel, allKeypointsTags.pipeline, allKeypointsTags.tools]),
+        new ProjectKeypointInfo("Handle platform-specific requirements", GarfieldKeypointDescriptionPlatform, [allKeypointsTags.multiplatform, allKeypointsTags.optimization, allKeypointsTags.ui]), ],
+        'orange',
+        'green',
+        '/garfield'
+      ),
+      /*
+            igsProject: new ProjectInfo('20h Impact Game Series', 'Solo-developed games created in just 40 hours, inspired by real-world issues.', [allProjectsTags.unity, allProjectsTags.personalProject,  allProjectsTags.currentProject, allProjectsTags.prototypes]
+              , garfieldPictureOverview  , 'August 2026 to Present','Only me!',
+              'Solo Game Developer',
+              IGSPitch,
+              '',
+              [new ProjectKeypointInfo("Super Cool Game Name!",
+                IGSKeypointDescriptionTest,
+                [allKeypointsTags.elderlySocialIsolation,
+                  allKeypointsTags.pointAndClick, allKeypointsTags.unity],
+                'fZ6ramtZYAE', keypointContentType.video),
 
-          new ProjectKeypointInfo("Super Cool Game Name!",
-            IGSKeypointDescriptionTest,
-            [allKeypointsTags.elderlySocialIsolation,
-              allKeypointsTags.pointAndClick, allKeypointsTags.unity],
-            'fZ6ramtZYAE', keypointContentType.video)
-        ],
-        'pink',
-        'cyan',
-        '/impactGameSeries', "Game ", true),
-*/
+                new ProjectKeypointInfo("Super Cool Game Name!",
+                  IGSKeypointDescriptionTest,
+                  [allKeypointsTags.elderlySocialIsolation,
+                    allKeypointsTags.pointAndClick, allKeypointsTags.unity],
+                  'fZ6ramtZYAE', keypointContentType.video)
+              ],
+              'pink',
+              'cyan',
+              '/impactGameSeries', "Game ", true),
+      */
 
       dofusBetaProject: new ProjectInfo(
         'Dofus 3.0 Open Beta',
@@ -126,7 +140,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
           allProjectsTags.patchs,
         ],
         dofusOverviewPicture,
-        'July 2024 to October 2024 (3 months)','Team ≈70 members, including ≈20 of Game Programmers spread across Client and Server departments, as well as Game Designers, Level Designers, UX/UI Designers, QA specialists, Project Managers, and Game Artists.',
+        'July 2024 to October 2024 (3 months)', 'Team ≈70 members, including ≈20 of Game Programmers spread across Client and Server departments, as well as Game Designers, Level Designers, UX/UI Designers, QA specialists, Project Managers, and Game Artists.',
         'Client Game Programmer',
         dofusPitch,
         'dIsIL1yv6iA',
@@ -140,7 +154,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
               allKeypointsTags.pipeline,
               allKeypointsTags.patches,
             ],
-           dofusKeypointWorkflow,
+            dofusKeypointWorkflow,
             keypointContentType.image,
           ),
           new ProjectKeypointInfo(
@@ -150,7 +164,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
               allKeypointsTags.ui,
               allKeypointsTags.optimization,
             ],
-            [dofusKeypointUI1,dofusKeypointUI2,dofusKeypointUI4,dofusKeypointUI3,dofusKeypointUI5],
+            [dofusKeypointUI1, dofusKeypointUI2, dofusKeypointUI4, dofusKeypointUI3, dofusKeypointUI5],
             keypointContentType.swiper,
           ),
           new ProjectKeypointInfo(
@@ -224,7 +238,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
 
           new ProjectKeypointInfo(
             'Document/Prototype technical challenges',
-           rsmKeypointDescriptionResearch,
+            rsmKeypointDescriptionResearch,
             [
               allKeypointsTags.documentation,
               allKeypointsTags.research,
@@ -243,7 +257,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
               allKeypointsTags.optimization,
               allKeypointsTags.ui,
             ],
-            [rsmKeypointContentPrototype1, rsmKeypointContentPrototype2,rsmKeypointContentPrototype3, rsmKeypointContentPrototype4, rsmKeypointContentPrototype5],
+            [rsmKeypointContentPrototype1, rsmKeypointContentPrototype2, rsmKeypointContentPrototype3, rsmKeypointContentPrototype4, rsmKeypointContentPrototype5],
             keypointContentType.swiper,
           ),
 
@@ -261,7 +275,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
           allProjectsTags.blueprints,
           allProjectsTags.steam,
         ],
-       iNRSOverviewPicture,
+        iNRSOverviewPicture,
         'October 2023 to January 2024 (4 months)',
         '4 Game Designers, 2 Game Programmers',
         'Gameplay Programmer',
@@ -340,7 +354,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
               allKeypointsTags.pipeline,
               allKeypointsTags.communication,
             ],
-           bobyKeypointWorkflow,
+            bobyKeypointWorkflow,
             keypointContentType.image,
           ),
           new ProjectKeypointInfo(
@@ -367,7 +381,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
           ),
           new ProjectKeypointInfo(
             'Integrate the game in the software',
-           bobyKeypointDescriptionIntegration,
+            bobyKeypointDescriptionIntegration,
             [
               allKeypointsTags.php,
               allKeypointsTags.mobile,
@@ -427,7 +441,7 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
               allKeypointsTags.pipeline,
               allKeypointsTags.api
             ],
-           [ esquirelKeypointTools2,esquirelKeypointTools,],
+            [esquirelKeypointTools2, esquirelKeypointTools,],
             keypointContentType.swiper,
           ),
           new ProjectKeypointInfo(

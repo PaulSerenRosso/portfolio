@@ -40,8 +40,10 @@ export const allKeypointsTags ={
   optimization:"Optimization",
   network : "Network",
   combat : "Combat",
+  trcConsole : "TrcConsole",
   sound : "Sounds",
   controller:"3C",
+  multiplatform: "Multiplatform Development",
   gameFeel: "Game feels",
   artIntegration : "Art Integration",
   physics :"Physics",
@@ -54,6 +56,7 @@ export const allKeypointsTags ={
   procedural:"Procedural Content",
   api:"API",
   gameDesign:"Game Design",
+  systems:"Systems",
 
   // for games prototypes of IGS
   elderlySocialIsolation:"Elderly Social Isolation",
