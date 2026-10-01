@@ -14,12 +14,14 @@ export default defineComponent({
   <space-paragraph>I cannot discuss the development of Garfield without mentioning its development for both PC and
     consoles. This introduced a wide range of constraints and challenges that I needed to handle.
   </space-paragraph>
-  <space-paragraph>For the UI, I made the pause menu adapt its <bold-element>control scheme</bold-element> according to the platform and connected
+  <space-paragraph>For the UI, I made the pause menu adapt its <bold-element>control scheme</bold-element> according to the <bold-element>gameplay context</bold-element> (Overworld, Jon house, and for each costume) and the <bold-element>platform</bold-element> and connected
     gamepad . Throughout the UI, <bold-element>input icons</bold-element> also changed based on the platform and gamepad being used.
     <bold-element>Navigation</bold-element> needed to work seamlessly with a  gamepad, keyboard, and mouse, especially in
     menus containing <bold-element>multiple stacks</bold-element>. The  <bold-element>focus</bold-element> always needed to be correctly managed.
     I also handled the <bold-element>pop-up system</bold-element>, which needed to be robust and simple to use to support <bold-element>console-specific
-      alerts</bold-element>, such as gamepad disconnections. And the <bold-element>list of the options</bold-element> needed to be platform specific.
+      alerts
+    </bold-element>
+    , such as gamepad disconnections. Certain <bold-element>options</bold-element> should only be <bold-element>displayed on supported platforms</bold-element> or have <bold-element>platform-specific default values</bold-element>. For example, fullscreen resolution and graphics quality should be available only on PC, while the language options should default to the system language.
   </space-paragraph>
   <space-paragraph>Garfield needed to support both <bold-element>French AZERTY and QWERTY keyboards</bold-element>. The game also needed to support
     the inversion of the <bold-element>A and B buttons</bold-element> on Nintendo Switch controllers compared with traditional gamepads. In both

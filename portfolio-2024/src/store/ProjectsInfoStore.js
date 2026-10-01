@@ -24,9 +24,21 @@ import bobyKeypointDescriptionWorkflow from "@/components/projects/boby/BobyKeyp
 
 //TODO:import the generated files
 import {
-  bobyKeypointResponsive1, bobyKeypointResponsive2, bobyKeypointResponsive3,
-  bobyKeypointWorkflow, dofusKeypointUI1, dofusKeypointUI2, dofusKeypointUI3, dofusKeypointUI4, dofusKeypointUI5,
-  dofusKeypointWorkflow, esquirelKeypointTools, esquirelKeypointTools2, inrsKeypointSteam,
+  bobyKeypointResponsive1,
+  bobyKeypointResponsive2,
+  bobyKeypointResponsive3,
+  bobyKeypointWorkflow,
+  dofusKeypointUI1,
+  dofusKeypointUI2,
+  dofusKeypointUI3,
+  dofusKeypointUI4,
+  dofusKeypointUI5,
+  dofusKeypointWorkflow,
+  esquirelKeypointTools,
+  esquirelKeypointTools2,
+  garfieldKeypointUiFramework,
+  garfieldKeypointUiFramework2, garfieldKeypointUiFramework3, garfieldKeypointUiFramework4,
+  inrsKeypointSteam,
   rsmKeypointContentConcept1,
   rsmKeypointContentConcept2,
   rsmKeypointContentConcept3,
@@ -39,7 +51,9 @@ import {
   rsmKeypointContentProducing5,
   rsmKeypointContentPrototype1,
   rsmKeypointContentPrototype2,
-  rsmKeypointContentPrototype3, rsmKeypointContentPrototype4, rsmKeypointContentPrototype5
+  rsmKeypointContentPrototype3,
+  rsmKeypointContentPrototype4,
+  rsmKeypointContentPrototype5
 } from "@/utils/generated/projectKeypointImagesImports.js"
 import {
   bobyOverviewPicture,
@@ -71,8 +85,6 @@ import rsmKeypointDescriptionProducing from "@/components/projects/rsm/RsmKeypoi
 import rsmKeypointDescriptionResearch from "@/components/projects/rsm/RsmKeypointDescriptionResearch.vue";
 import rsmKeypointDescriptionPrototype from "@/components/projects/rsm/RsmKeypointDescriptionPrototype.vue";
 import garfieldPitch from "@/components/projects/garfield/GarfieldPitch.vue";
-import IGSKeypointDescriptionTest from "@/components/projects/igs/IGSKeypointDescriptionTest.vue";
-import IGSPitch from "@/components/projects/igs/IGSPitch.vue";
 import GarfieldKeypointDescriptionReusableCode
   from "@/components/projects/garfield/GarfieldKeypointDescriptionReusableCode.vue";
 import GarfieldKeypointDescriptionUiFramework
@@ -97,11 +109,11 @@ export const useProjectInfoStore = defineStore('projectsInfoStore', {
         garfieldPitch,
         'MdxfG-TXWGs',
         [
-          new ProjectKeypointInfo("Develop a Reusable UI Framework/Shared Codebase", GarfieldKeypointDescriptionReusableCode, [allKeypointsTags.ui, allKeypointsTags.architecture, allKeypointsTags.communication]),
-        new ProjectKeypointInfo("Manage the UI Framework from Start to Finish", GarfieldKeypointDescriptionUiFramework, [allKeypointsTags.research, allKeypointsTags.ui, allKeypointsTags.architecture, allKeypointsTags.documentation]),
-        new ProjectKeypointInfo("Develop Level-Flow Systems", GarfieldKeypointDescriptionLevelFlow, [allKeypointsTags.systems, allKeypointsTags.ui]),
-        new ProjectKeypointInfo("Work on various gameplay features ", GarfieldKeypointDescriptionVariousFeatures, [allKeypointsTags.combat, allKeypointsTags.architecture, allKeypointsTags.ai, allKeypointsTags.controller, allKeypointsTags.gameFeel, allKeypointsTags.pipeline, allKeypointsTags.tools]),
-        new ProjectKeypointInfo("Handle platform-specific requirements", GarfieldKeypointDescriptionPlatform, [allKeypointsTags.multiplatform, allKeypointsTags.optimization, allKeypointsTags.ui]), ],
+          new ProjectKeypointInfo("Develop a Reusable UI Framework/Shared Codebase", GarfieldKeypointDescriptionReusableCode, [allKeypointsTags.ui, allKeypointsTags.architecture, allKeypointsTags.communication], "op4B1avn5jY", keypointContentType.video),
+          new ProjectKeypointInfo("Manage the UI Framework from Start to Finish", GarfieldKeypointDescriptionUiFramework, [allKeypointsTags.research, allKeypointsTags.ui, allKeypointsTags.architecture, allKeypointsTags.documentation], [garfieldKeypointUiFramework, garfieldKeypointUiFramework2, garfieldKeypointUiFramework3, garfieldKeypointUiFramework4],  keypointContentType.swiper),
+          new ProjectKeypointInfo("Develop Level-Flow Systems", GarfieldKeypointDescriptionLevelFlow, [allKeypointsTags.systems, allKeypointsTags.ui], "8kneOY-UEY8", keypointContentType.video),
+          new ProjectKeypointInfo("Work on various gameplay features ", GarfieldKeypointDescriptionVariousFeatures, [allKeypointsTags.combat, allKeypointsTags.architecture, allKeypointsTags.ai, allKeypointsTags.controller, allKeypointsTags.gameFeel, allKeypointsTags.pipeline, allKeypointsTags.tools], "1F8HT7Mhwe8", keypointContentType.video),
+          new ProjectKeypointInfo("Handle platform-specific requirements", GarfieldKeypointDescriptionPlatform, [allKeypointsTags.multiplatform, allKeypointsTags.optimization, allKeypointsTags.ui], "4tfMf_yt-_M", keypointContentType.video), ],
         'orange',
         'green',
         '/garfield'

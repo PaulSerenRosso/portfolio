@@ -23,6 +23,14 @@ import esquirelKeypointToolsJpgImported from "@/assets/generated/projectsKeypoin
 import esquirelKeypointToolsWebpImported from "@/assets/generated/projectsKeypoints/EsquirelKeypointTools.webp";
 import esquirelKeypointTools2JpgImported from "@/assets/generated/projectsKeypoints/EsquirelKeypointTools2.jpg";
 import esquirelKeypointTools2WebpImported from "@/assets/generated/projectsKeypoints/EsquirelKeypointTools2.webp";
+import garfieldKeypointUiFrameworkJpgImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework.jpg";
+import garfieldKeypointUiFrameworkWebpImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework.webp";
+import garfieldKeypointUiFramework2JpgImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework2.jpg";
+import garfieldKeypointUiFramework2WebpImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework2.webp";
+import garfieldKeypointUiFramework3JpgImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework3.jpg";
+import garfieldKeypointUiFramework3WebpImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework3.webp";
+import garfieldKeypointUiFramework4JpgImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework4.jpg";
+import garfieldKeypointUiFramework4WebpImported from "@/assets/generated/projectsKeypoints/GarfieldKeypointUiFramework4.webp";
 import inrsKeypointSteamJpgImported from "@/assets/generated/projectsKeypoints/InrsKeypointSteam.jpg";
 import inrsKeypointSteamWebpImported from "@/assets/generated/projectsKeypoints/InrsKeypointSteam.webp";
 import jabKeypointOptimizationJpgImported from "@/assets/generated/projectsKeypoints/JabKeypointOptimization.jpg";
@@ -104,6 +112,22 @@ export const  esquirelKeypointTools= {
 export const  esquirelKeypointTools2= {
     jpg: esquirelKeypointTools2JpgImported,
     webp: esquirelKeypointTools2WebpImported,
+  };
+export const  garfieldKeypointUiFramework= {
+    jpg: garfieldKeypointUiFrameworkJpgImported,
+    webp: garfieldKeypointUiFrameworkWebpImported,
+  };
+export const  garfieldKeypointUiFramework2= {
+    jpg: garfieldKeypointUiFramework2JpgImported,
+    webp: garfieldKeypointUiFramework2WebpImported,
+  };
+export const  garfieldKeypointUiFramework3= {
+    jpg: garfieldKeypointUiFramework3JpgImported,
+    webp: garfieldKeypointUiFramework3WebpImported,
+  };
+export const  garfieldKeypointUiFramework4= {
+    jpg: garfieldKeypointUiFramework4JpgImported,
+    webp: garfieldKeypointUiFramework4WebpImported,
   };
 export const  inrsKeypointSteam= {
     jpg: inrsKeypointSteamJpgImported,

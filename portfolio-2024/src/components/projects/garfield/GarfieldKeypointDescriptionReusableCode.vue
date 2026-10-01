@@ -20,7 +20,7 @@ export default defineComponent({
     the <bold-element>save system</bold-element>, which were initially developed mainly in the Garfield codebase, and progressively I extracted parts
     of them so they could be reused in the OSome codebase.
   </space-paragraph>
-  <space-paragraph> <bold-element> I created most of the UI for Garfield</bold-element>, and following this logic was also responsible for <bold-element>isolating a UI framework</bold-element> that
+  <space-paragraph> <bold-element> I created most of the UI for Garfield</bold-element> from the <bold-element>HUDs</bold-element> and <bold-element>in-world widgets</bold-element> to the <bold-element>menus,</bold-element> and following this logic was also responsible for <bold-element>isolating a UI framework</bold-element> that
     could be <bold-element>reused in future games</bold-element>.
   I created custom versions of <bold-element>UI components</bold-element>, such as buttons and sliders, to improve <bold-element>focus handling</bold-element>
     and <bold-element>visual feedback</bold-element>.  I also developed more complex components, including a <bold-element>carousel</bold-element>, a  <bold-element>warning-save widget</bold-element>, timers, and
@@ -36,7 +36,7 @@ export default defineComponent({
   </space-paragraph>
   <main-paragraph>After that, I added more <bold-element>advanced features</bold-element> to the framework, such as  <bold-element>loading screens</bold-element>,  <bold-element>pop-ups</bold-element>,
     <bold-element> credits</bold-element>,  <bold-element>fade effects</bold-element>,  <bold-element>the main menu</bold-element>,  <bold-element>the pause menu</bold-element>, and  <bold-element>startup screens </bold-element> systems.
-    Moreover, I created the <bold-element>options system</bold-element>. This was particularly useful because it allowed <bold-element>other
+    Moreover, I created the <bold-element>options system</bold-element> with some examples such as languages, audio with <link-element link="https://www.fmod.com/">FMOD</link-element> , and video settings. The system was particularly useful because it allowed <bold-element>other
       programmers</bold-element> to <bold-element> add new options easily</bold-element> across the save system, the options menu, and the different managers.
   </main-paragraph>
 </template>
