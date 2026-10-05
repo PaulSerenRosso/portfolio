@@ -16,7 +16,7 @@ export default defineComponent({
     <space-paragraph>
       <link-element link="https://store.steampowered.com/app/3932790/Garfield__Escape_from_Monday/"> Garfield Escape
         From Monday</link-element>
-      is an <bold-element>3D platformer</bold-element> developed by  <link-element link="https://www.osome-studio.com/">OSome Studio</link-element> with Unreal Engine, and released the 24 September 2026 by
+      is an <bold-element>3D platformer</bold-element> developed by  <link-element link="https://www.osome-studio.com/">OSome Studio</link-element> with Unreal Engine, and released the 24th September 2026 by
       <link-element link="https://www.microids.com/">Microids</link-element> on <bold-element>Nintendo Switch, PS5, PC, Xbox Series X</bold-element>.
     </space-paragraph>
     <space-paragraph>

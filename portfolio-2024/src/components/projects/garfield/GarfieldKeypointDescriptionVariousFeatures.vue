@@ -17,7 +17,7 @@ export default defineComponent({
       ownership</bold-element> of a <bold-element>new/existing feature</bold-element> to help reduce their workload over the long term.
   </space-paragraph>
   <space-paragraph>I worked on the <bold-element>3Cs</bold-element>  and created Garfield’s
-    <bold-element>attack combo system</bold-element> linked to the <bold-element>input-buffering</bold-element> and abilities like the <bold-element>gain</bold-element> of <bold-element>costume</bold-element> or of <bold-element>lasagna</bold-element> and I contributed to the <bold-element>lasso cowboy</bold-element> and <bold-element>crocodile</bold-element> features. We have integrated <link-element link="https://dev.epicgames.com/documentation/unreal-engine/gameplay-ability-system-for-unreal-engine?lang=en-US">GAS</link-element> (the Gameplay Ability System), because it gave a <bold-element>great structure</bold-element> for our codebase particularly useful!
+    <bold-element>attack combo system</bold-element> linked to the <bold-element>input-buffering</bold-element> and abilities like the <bold-element>gain</bold-element> of <bold-element>costume</bold-element> or of <bold-element>lasagna</bold-element> and I contributed to the <bold-element>lasso cowboy</bold-element> and <bold-element>crocodile</bold-element> features. We have integrated <link-element link="https://dev.epicgames.com/documentation/unreal-engine/gameplay-ability-system-for-unreal-engine?lang=en-US">GAS</link-element> (the Gameplay Ability System), because it gave a <bold-element>great structure</bold-element> for our codebase which was particularly useful!
     </space-paragraph>
   <space-paragraph>
     I also
@@ -41,7 +41,7 @@ export default defineComponent({
   </space-paragraph>
 
   <main-paragraph>
-    I also supported  <bold-element>AI programming</bold-element> for example by working on <bold-element>shooter enemies</bold-element>, the skewer enemy, which is composed of several smaller
+    I also supported  <bold-element>AI programming</bold-element> for example by working on <bold-element>shooter enemies</bold-element>, the skewer enemy, which was composed of several smaller
     enemies, as well as the eggplant and rib enemies and the <bold-element>rodeo system</bold-element> that allows Garfield to mount them.
     Working on the gameplay features of a 3D platformer was particularly interesting to me because they needed to feel <bold-element>juicy, responsive, and satisfying</bold-element>. It was also rewarding to exchange ideas
     with <bold-element>animators</bold-element> and <bold-element>designers</bold-element> to determine the best ways to improve the experience and decide which areas to

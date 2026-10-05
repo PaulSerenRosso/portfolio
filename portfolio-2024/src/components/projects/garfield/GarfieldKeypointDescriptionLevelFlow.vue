@@ -21,7 +21,7 @@ export default defineComponent({
     collecting snacks. I created the UI for these systems while also improving and fixing the existing code. I <bold-element>reused
       parts</bold-element> of this system for levels featuring ribs and eggplants, which Garfield could mount to reach specific
     destinations. Throughout production, I balanced <bold-element>code quality, maintainability, and deadline requirements</bold-element>. In some
-    cases, such as this last, using a <bold-element>focused workaround</bold-element> was more appropriate than creating perfectly clean code for a
+    cases, such as this last one, using a <bold-element>focused workaround</bold-element> was more appropriate than creating perfectly clean code for a
     feature limited to a small number of levels.
   </space-paragraph>
   <space-paragraph>For meta-progression, I took responsibility for the <bold-element>Jon's House</bold-element> after several programmers and designers

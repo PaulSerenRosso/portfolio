@@ -14,7 +14,7 @@ export default defineComponent({
 <template>
   <space-paragraph>At the <bold-element>beginning of the project</bold-element>, we needed an initial version of the UI before there was enough time
     to complete the framework’s R&D. I therefore <bold-element>prototyped the initial UI</bold-element> so that the team could start working with it
-    immediately. I then tested <bold-element>different approaches</bold-element> to creating <bold-element> UI</bold-element> in Unreal Engine. I <bold-element>documented</bold-element> my  <bold-element>benchmarks</bold-element> and  <bold-element>presented</bold-element> the results during our weekly  <bold-element>Tech Review meetings</bold-element>, where
+    immediately. I then tested <bold-element>different approaches</bold-element> to create <bold-element> UI</bold-element> in Unreal Engine. I <bold-element>documented</bold-element> my  <bold-element>benchmarks</bold-element> and  <bold-element>presented</bold-element> the results during our weekly  <bold-element>Tech Review meetings</bold-element>, where
     programmers shared progress, discussed challenges, and coordinated with QA and technical game designers.
     We ultimately chose
     <link-element
@@ -38,8 +38,8 @@ export default defineComponent({
   <main-paragraph>For our <bold-element>menus</bold-element>, I established a <bold-element> ViewModel</bold-element> pattern. For <bold-element>smaller UI</bold-element> elements, I promoted <bold-element>simple, focused
     implementations</bold-element>. In <bold-element>complex HUDs</bold-element>, I encouraged grouping related data into <bold-element>structs</bold-element>. I also established a clear
     separation of responsibilities: <bold-element>UI logic and UI Component binding declarations</bold-element> should be handled in <bold-element>C++</bold-element>, while the <bold-element>binding implementations</bold-element> and <bold-element>Ui layout</bold-element> should
-    remain in <bold-element>Blueprints</bold-element>. This approach also makes it possible to create <bold-element>multiple layouts</bold-element> that share the <bold-element>same underlying behavior</bold-element>. Finally, I structured the <bold-element>data flow</bold-element> so that <bold-element>dedicated systems</bold-element> receive <bold-element>gameplay data</bold-element>, process and
-    <bold-element>convert </bold-element>it for the UI, and <bold-element>send</bold-element> properly formatted data to the  <bold-element>UI layer</bold-element>.
+    remain in <bold-element>Blueprints</bold-element>. This approach also made it possible to create <bold-element>multiple layouts</bold-element> that share the <bold-element>same underlying behavior</bold-element>. Finally, I structured the <bold-element>data flow</bold-element> so that <bold-element>dedicated systems</bold-element> received <bold-element>gameplay data</bold-element>, processed and
+    <bold-element>converted </bold-element>it for the UI, and <bold-element>sent</bold-element> properly formatted data to the  <bold-element>UI layer</bold-element>.
   </main-paragraph>
 </template>
 
